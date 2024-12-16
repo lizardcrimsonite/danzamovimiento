@@ -1,0 +1,631 @@
+/* Navbar */
+.navbar {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 0.5rem 1rem; /* Espaciado para el navbar */
+}
+
+/* Estilo de la marca del navbar (logo + texto) */
+.navbar-brand {
+    font-weight: bold;
+    color: #333333;
+    font-size: 2.2rem; /* Tamaño del texto del logo */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra los elementos de manera horizontal */
+    flex-direction: row; /* Alineación horizontal por defecto */
+    text-align: center; /* Centrar el contenido en su contenedor */
+}
+
+.navbar-brand img {
+    height: 80px; /* Ajustar tamaño del logo */
+    width: 80px;
+    margin-right: 20px;
+}
+
+.navbar-brand span {
+    margin-left: 2px; /* Espacio entre el logo y el texto */
+    color: #333333; /* Color del texto */
+    font-size: 2.2rem; /* Ajuste del tamaño de la fuente */
+    font-family: "Dancing Script", cursive !important; /* Asegura que la fuente se aplique */
+    font-weight: bold;
+}
+
+/* Estilo de los links */
+.nav-link {
+    color: #333333; /* Color predeterminado de los links */
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+    font-family: "Lobster", sans-serif;
+}
+
+/* Color al pasar el mouse sobre los links */
+.nav-link:hover {
+    color: #5bea0f;
+}
+
+/* Estilos del botón de toggler */
+.navbar-toggler {
+    border-color: #808080; /* Gris para el borde */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Gris para el icono */
+}
+
+/* Estilo para los links en dispositivos pequeños */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0.5rem 0; /* Espacio entre los elementos en pantallas pequeñas */
+    }
+}
+
+/* Menú colapsado para dispositivos móviles (apilado verticalmente) */
+@media (max-width: 767px) {
+    .navbar-nav {
+        display: block; /* Los items del menú se apilan */
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center; /* Centrar los elementos */
+        margin: 1rem 0; /* Espaciado entre los items */
+    }
+
+    /* Cambio en la dirección del flex en pantallas pequeñas */
+    .navbar-brand {
+        flex-direction: column; /* Apilar logo y texto verticalmente en pantallas pequeñas */
+        text-align: center; /* Centrar el contenido */
+        justify-content: center; /* Centrar verticalmente */
+        height: 100%; /* Asegura que ocupe el 100% de la altura disponible */
+    }
+
+    /* Ajuste para mejorar la visibilidad en pantallas pequeñas */
+    .navbar-toggler {
+        background-color: #f8f9fa; /* Cambiar color de fondo */
+    }
+}
+
+/* Alineación de los links a la derecha en pantallas grandes */
+.navbar-nav {
+    margin-left: auto; /* Empuja los links hacia la derecha */
+}
+
+/* Alineación de los items de menú en pantallas grandes */
+.navbar-expand-lg .navbar-nav {
+    display: flex;
+    flex-direction: row; /* Alinea los items de manera horizontal */
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+    margin-left: 1rem; /* Espaciado entre los elementos */
+}
+
+/* Estilo para las pantallas muy grandes */
+@media (min-width: 1200px) {
+    .navbar-nav .nav-item {
+        font-size: 1.4rem; /* Ajuste del tamaño de los elementos */
+    }
+}
+
+/* Estilos para la sección Hero */
+.hero-section {
+    position: relative;
+    height: auto; /* Hace que la sección ocupe toda la altura de la ventana */
+    background-size: cover;
+    background-position: center;
+    background-size: cover; /* Cubre el contenedor con la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(11, 11, 11);
+    text-align: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+/* Contenido dentro de la hero-section */
+.hero-content {
+    z-index: 1; /* Asegura que el contenido esté encima de la imagen */
+}
+
+/* Estilo de título */
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo de subtítulo */
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    position: relative; /* Necesario para posicionar el botón encima de la imagen */
+    width: 100%; /* Asegura que el contenedor de la imagen ocupe todo el ancho */
+}
+/* Estilo para la imagen */
+.hero-section img {
+    max-width: 100%;
+    width: 1440px;
+
+}
+
+/* Estilo del botón */
+.hero-section .btn {
+    position: absolute; /* Permite posicionar el botón sobre la imagen */
+    right: 0; /* Ubica el botón en el lado derecho */
+    bottom: 10px; /* Ajusta la posición desde la parte inferior de la imagen */
+    transform: translateX(50%); /* Centra el botón respecto a la imagen */
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 30px;
+    z-index: 2; /* Asegura que el botón esté encima de la imagen */
+}
+
+/* Asegura que el contenido no se oculte en pantallas pequeñas */
+@media (max-width: 767px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-section .btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
+
+/* Estilos para la sección de cursos */
+.courses-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Estilo de las tarjetas */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 350px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    color: #777;
+    font-family: "Shadows Into Light", cursive;
+
+}
+
+.btn-primary {
+    background-color: #13dc60;
+    border-color: #0ce7cd;
+}
+
+/* Estilo del modal */
+.modal-content {
+    border-radius: 10px;
+}
+
+/* Estilo para las imágenes dentro de los modales */
+.modal-body img {
+    max-width: 100%; /* Asegura que la imagen no exceda el tamaño del modal */
+    height: auto;
+}
+
+.modal-header {
+    background-color: #c650f185;
+    color: white;
+    font-family: "Shadows Into Light", cursive;
+
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* Botones */
+.btn-secondary, .btn-primary {
+    border-radius: 30px;
+}
+
+/* Responsividad */
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .courses-section {
+        padding: 40px 0;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .card-img-top {
+        height: 120px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    .btn-primary {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Responsividad para las tarjetas */
+@media (max-width: 991px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+}
+
+/* Estilos generales para la sección del carousel */
+.carousel-section {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Estilo del carousel */
+.carousel-inner {
+    width: 100%;
+    height: 50vh; /* Ajusta la altura para que no sea tan grande */
+}
+
+/* Estilo para las imágenes dentro del carousel */
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    max-height: 400px; /* Limita la altura máxima de las imágenes */
+}
+
+/* Estilo para los controles del carousel */
+.carousel-control-prev, .carousel-control-next {
+    color: white;
+    font-size: 2rem;
+    z-index: 10; /* Asegura que los controles estén siempre encima de las imágenes */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para las flechas */
+}
+
+/* Hacer el carousel responsivo para dispositivos pequeños */
+@media (max-width: 767px) {
+    .carousel-inner {
+        height: 40vh; /* Ajusta la altura en pantallas más pequeñas */
+    }
+
+    .carousel-item img {
+        max-height: 300px; /* Ajusta la altura máxima de las imágenes */
+    }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carousel-inner {
+        height: 45vh; /* Ajusta la altura en pantallas medianas */
+    }
+
+    .carousel-item img {
+        max-height: 350px; /* Ajusta la altura máxima de las imágenes */
+    }
+}
+
+/* Para pantallas grandes (desktops) */
+@media (min-width: 1025px) {
+    .carousel-inner {
+        height: 50vh; /* Mantiene la altura en pantallas grandes */
+    }
+
+    .carousel-item img {
+        max-height: 400px; /* Ajusta la altura máxima de las imágenes */
+    }
+}/* Estilo para la sección de contacto */
+.contact-section {
+    position: relative;
+    background-image: url('../img/girls-7405719_1280.jpg'); /* Cambia la ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    z-index: 1;
+  }
+  
+  /* Capa para el efecto glossy */
+  .contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3); /* Fondo blanco semi-transparente */
+    backdrop-filter: blur(10px); /* Desenfoque de fondo */
+    border-radius: 20px; /* Bordes redondeados */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Asegura que el overlay esté por encima de la imagen */
+  }
+  
+  /* Estilo para el formulario */
+  .container {
+    z-index: 3; /* Asegura que el formulario esté por encima de la capa de overlay */
+  }
+  
+  /* Título de la sección */
+  .section-title {
+    font-size: 2.5rem;
+    color: #f70e0e5e;
+    margin-bottom: 20px;
+    z-index: 3;
+  }
+  
+  /* Subtítulo de la sección */
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 40px;
+    z-index: 3;
+  }
+  
+  /* Estilos del formulario */
+  .form-control {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente para los inputs */
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+  
+  button[type="submit"] {
+    background-color: #0dff00;
+    border-color: #007bff;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 1199px) {
+    .section-title {
+      font-size: 2.2rem;
+    }
+    
+    .section-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .form-control, button[type="submit"] {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .section-subtitle {
+      font-size: 1rem;
+    }
+  
+    .form-control, button[type="submit"] {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .section-title {
+      font-size: 1.8rem;
+    }
+  
+    .section-subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .form-control, button[type="submit"] {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .section-title {
+      font-size: 1.6rem;
+    }
+  
+    .section-subtitle {
+      font-size: 0.8rem;
+    }
+  
+    .form-control, button[type="submit"] {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Estilos para el footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1;
+    padding: 10px;
+    text-align: start;
+    margin-top: 50px;
+}
+
+.footer-center {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-right {
+    flex: 1;
+    padding: 10px;
+    text-align: end;
+    margin-top: 35px;
+}
+/* Estilo para los iconos sociales */
+.social-icon {
+    color: #fff;
+    font-size: 30px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Color de hover */
+}
+
+.footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-span {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.footer-copy {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Estilos para los textos en el lado derecho */
+.footer-right p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.footer-right strong {
+    font-weight: bold;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        flex: none;
+        margin-bottom: 20px;
+    }
+}
