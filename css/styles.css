@@ -1,3 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+}
+
 /* Navbar */
 .navbar {
     background-color: #ffffff; /* Fondo blanco */
@@ -67,7 +81,7 @@
 /* Menú colapsado para dispositivos móviles (apilado verticalmente) */
 @media (max-width: 767px) {
     .navbar-nav {
-        display: block; /* Los items del menú se apilan */
+        display: block !important; /* Los items del menú se apilan */
         width: 100%;
     }
 
@@ -112,6 +126,11 @@
     }
 }
 
+@media (max-width: 768px) {
+    .navbar-toggler {
+        width: 95%;
+    }
+}
 /* Estilos para la sección Hero */
 .hero-section {
     position: relative;
@@ -137,6 +156,8 @@
 .hero-title {
     font-size: 3rem;
     margin-bottom: 20px;
+    font-family: "Lobster", sans-serif;
+    color: #c650f185;
 }
 
 /* Estilo de subtítulo */
@@ -365,8 +386,9 @@
 .carousel-item img {
     width: 100%;
     height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
-    max-height: 400px; /* Limita la altura máxima de las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor sin deformarse */
+    width: 100%;       /* Asegúrate de que abarque el ancho completo */
+    height: 100vh;     /* Haz que ocupe el 100% de la altura de la ventana */
 }
 
 /* Estilo para los controles del carousel */
