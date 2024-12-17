@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | Danza en Movimiento</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet"> <!-- Carga de Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        /* Estilos personalizados */
         .hero {
             background: url('img/valpo.jpg') no-repeat center center/cover; /* Imagen de fondo */
             height: 100vh; /* Altura del 100% de la pantalla */
             position: relative;
         }
+        
+        .hero::before {
+            content: ''; /* Crea un pseudo-elemento vacío */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit; /* Hereda la imagen de fondo */
+            filter: blur(5px); /* Aplica el desenfoque */
+            z-index: 1; /* Coloca el pseudo-elemento detrás del contenido */
+        }
+        
         .hero-content {
             position: absolute;
             top: 50%; /* Centra verticalmente */
@@ -20,11 +35,14 @@
             transform: translate(-50%, -50%); /* Ajuste exacto */
             text-align: center;
             color: #fff; /* Texto blanco */
+            z-index: 2; /* Asegura que el contenido esté por encima del desenfoque */
         }
+        
         .hero-content img {
             max-width: 150px; /* Ajusta el tamaño del logo */
             margin-bottom: 20px;
         }
+        
         .btn-ingresar {
             background-color: #f04e30; /* Color personalizado para el botón */
             color: #fff;
@@ -33,11 +51,14 @@
             border: none;
             border-radius: 5px;
             transition: background 0.3s;
+            font-family: "Lobster", sans-serif;
         }
+        
         .btn-ingresar:hover {
             background-color: #d44228;
             color: #fff;
         }
+        
     </style>
 </head>
 <body>

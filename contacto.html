@@ -59,7 +59,7 @@
                   <div class="col-lg-6 col-md-8 mx-auto">
                     <h2 class="section-title text-center">Contáctanos</h2>
                     <p class="section-subtitle text-center">Estamos aquí para ayudarte. Envíanos un mensaje y te responderemos lo más pronto posible.</p>
-                    <form action="#" method="POST">
+                    <form id="contact-form" action="#" method="POST">
                       <div class="mb-3">
                         <label for="name" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="name" required>
@@ -113,12 +113,18 @@
             </div>
         </footer>
         
-          
-        
-    
         <!-- Scripts de Bootstrap -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- Script para mostrar mensaje de éxito -->
+        <script>
+            document.getElementById("contact-form").addEventListener("submit", function(event) {
+                event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+                alert("¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.");
+                // Opcionalmente, puedes resetear el formulario si lo deseas
+                document.getElementById("contact-form").reset();
+            });
+        </script>
 </body>
 </html>
-           
