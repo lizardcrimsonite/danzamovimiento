@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danza en Movimiento</title>
+
+    <!-- Preconexión para cargar fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Carga de la fuente Dancing Script desde Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet"> <!-- Carga de Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Carga del archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/Danza Minimalista-Photoroom.png" alt="Logo">
+                    <span class="h3">Danza en Movimiento</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link h4" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h4" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h4" href="cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h4" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h4" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #f4f4f9;
+                margin: 0;
+                padding: 0;
+                color: #333;
+            }
+
+            header {
+                background-color: #61f2c9;
+                color: white;
+                text-align: center;
+                padding: 40px 0;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+
+            .container {
+                width: 80%;
+                margin: 30px auto;
+            }
+
+            /* Tarjetas (Cards) */
+            .card {
+                border: none;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .card-img-top {
+                border-radius: 10px 10px 0 0;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .card-body {
+                padding: 20px;
+            }
+
+            h2 {
+                color: #007bff;
+                font-size: 1.8em;
+                border-bottom: 2px solid #007bff;
+                padding-bottom: 5px;
+            }
+
+            p {
+                font-size: 1.2em;
+                line-height: 1.6;
+            }
+
+            /* Sección de Áreas */
+            .areas-section {
+                margin-top: 50px;
+                background-color: #f10392;
+                padding: 30px;
+                border-radius: 10px;
+            }
+
+            .areas-section h3 {
+                color: #00f482;
+                font-size: 1.8em;
+                margin-bottom: 20px;
+            }
+
+            .areas-section ul {
+                font-size: 1.2em;
+                line-height: 1.6;
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <header>
+                <h1>Escuela de Artes Escénicas Valparaíso - MUDATECA</h1>
+            </header>
+
+            <div class="container">
+                <!-- Misión Card -->
+                <div class="card">
+                    <img src="img/Design.png" class="card-img-top" alt="Misión">
+                    <div class="card-body">
+                        <h2>Misíon</h2>
+                        <p>Nuestra misión es proporcionar un espacio de formación artística integral para adolescentes y
+                            jóvenes, enfocado en disciplinas como danza, actuación, canto y música. A través de nuestra
+                            malla curricular, buscamos nivelar conocimientos y preparar a futuros artistas para su
+                            ingreso a la universidad, contribuyendo al desarrollo cultural de Valparaíso.</p>
+                    </div>
+                </div>
+
+                <!-- Visión Card -->
+                <div class="card">
+                    <img src="img/man-5984098_1280.jpg" class="card-img-top" alt="Visión">
+                    <div class="card-body">
+                        <h2>Visión</h2>
+                        <p>Ser un referente en la formación artística introductoria y preparatoria de niñas, niños y
+                            jóvenes en la ciudad de Valparaíso. Aspiramos a consolidarnos como un espacio inclusivo y de
+                            calidad que promueva el talento artístico local, fortaleciendo a la capital cultural de
+                            Chile con futuros artistas preparados y comprometidos.</p>
+                    </div>
+                </div>
+
+                <!-- Compromiso Card -->
+                <div class="card">
+                    <img src="img/dance-5321562_1280.jpg" class="card-img-top"
+                        alt="Compromiso">
+                    <div class="card-body">
+                        <h2>Compromiso</h2>
+                        <p>Nos comprometemos a:</p>
+                        <ul>
+                            <p>Facilitar herramientas teórico-prácticas que potencien las habilidades artísticas de
+                                cada participante.</p>
+                            <p>Adaptarnos a las necesidades y diversidad de los grupos, promoviendo un aprendizaje
+                                inclusivo y respetuoso.</p>
+                            <p>Fomentar el desarrollo de la comunicación y la expresión artística como pilares
+                                fundamentales de la formación escénica.</p>
+                            <p>Contribuir al crecimiento personal y profesional de jóvenes artistas, fortaleciendo su
+                                camino hacia el ámbito universitario y profesional.</p>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Áreas de intervención -->
+                <div class="areas-section">
+                    <h3>Nuestro accionar tiene dos áreas de intervención:</h3>
+                    <ul>
+                        <p><strong>Área de formación artística:</strong> El corazón de nuestro proyecto radica en las
+                            actividades regulares de formación artística, organizadas en dos niveles: Niños/as y
+                            preadolescentes (8 a 12 años), y adolescentes (13 a 17 años).</p>
+                        <p><strong>Área de difusión artística:</strong> Enfoque en la promoción y difusión de las
+                            actividades artísticas dentro y fuera de la comuna de Valparaíso.</p>
+                    </ul>
+
+                    <h3>Modelo Pedagógico</h3>
+                    <p>Nuestro modelo pedagógico aborda contenidos teórico-prácticos, dejando siempre espacio para
+                        preguntas y reflexiones pertinentes al desarrollo de los talleres. Además, consideramos el
+                        trabajo diferenciado, respetando la diversidad y necesidades de cada grupo participante.</p>
+
+                    <h3>Comunicación en las Artes Escénicas</h3>
+                    <p>En disciplinas como danza, teatro u otras artes escénicas, la comunicación es fundamental: lograr
+                        que el receptor comprenda lo que queremos transmitir. Algunas preguntas clave en nuestro proceso
+                        de formación son:</p>
+                    <ul>
+                        <p>¿Qué quiero expresar y cómo lo hago?</p>
+                        <p>¿Cómo logro una comunicación efectiva?</p>
+                        <p>¿Qué factores son necesarios para lograr esta conexión?</p>
+                    </ul>
+                    <p>Para responder estas interrogantes, desarrollaremos habilidades esenciales como la atención
+                        consciente al cuerpo y la percepción del entorno. Estos elementos serán la base para interpretar
+                        y/o crear piezas coreográficas y escénicas con sentido y profundidad.</p>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <!-- Lado izquierdo: iconos de redes sociales -->
+                    <div class="footer-left">
+                        <a href="https://wa.me/tu-numero" target="_blank" class="social-icon">
+                            <i class="fab fa-whatsapp" style="font-size: 2rem; color: #25D366;"></i>
+                        </a>
+                        <a href="https://www.facebook.com/tu-pagina" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook" style="font-size: 2rem; color: #1877F2;"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tu-pagina" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram" style="font-size: 2rem; color: #E4405F;"></i>
+                        </a>
+                        <a href="https://www.youtube.com/tu-canal" target="_blank" class="social-icon">
+                            <i class="fab fa-youtube" style="font-size: 2rem; color: #FF0000;"></i>
+                        </a>
+                    </div>
+
+                    <!-- Centro: Logo y texto -->
+                    <div class="footer-center">
+                        <img src="img/logocirce.png" alt="Logo Danza en Movimiento" class="footer-logo">
+                        <p class="mb-1">© 2024 Danza en Movimiento. Todos los derechos reservados.</p>
+                    </div>
+
+                    <!-- Lado derecho: Dirección, mail y teléfono -->
+                    <div class="footer-right">
+                        <p><strong>Dirección:</strong> Calle Ficticia 123, Ciudad</p>
+                        <p><strong>Email:</strong> contacto@danzaenmovimiento.com</p>
+                        <p><strong>Teléfono:</strong> +123 456 789</p>
+                    </div>
+                </div>
+            </footer>
+
+
+
+
+            <!-- Scripts de Bootstrap -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+        </body>
+
+</html>
